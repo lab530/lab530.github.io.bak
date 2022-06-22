@@ -6,7 +6,11 @@
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
-<title>{{ page.title }} | {{site.name}}</title>
+{% if page.title == "Home" %}
+    <title>{{site.name}}</title>
+{% else %}
+    <title>{{ page.title }} | {{site.name}}</title>
+{% endif %}
 
 {% seo %}
     
