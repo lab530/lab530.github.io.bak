@@ -11,7 +11,7 @@ post_class: post-template
     <!-- Author & Date  Box -->
     {% assign author = site.authors[page.author] %}
     {% if page.author %}
-    <div class="d-flex align-items-center mt-4">
+    <div class="d-flex align-items-center mt-4" style="margin-bottom:1.5em">
         <div>
             {% if author.avatar %}
             <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
