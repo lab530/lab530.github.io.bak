@@ -41,11 +41,13 @@ post_class: post-template
 <!-- Content -->
 {% include article.html %}
 
-<!-- Rating -->
+<!-- Rating: disabled -->
+{% if false %}
 {% if page.rating %}
 <div class="rating mt-4 mb-4 d-flex align-items-center">
     <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
 </div>
+{% endif %}
 {% endif %}
 
 <!-- Author Box if enabled from _config.yml -->
