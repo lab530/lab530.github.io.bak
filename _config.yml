@@ -28,7 +28,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-figure
-    
+
 # Archives
 jekyll-archives:
   enabled:
@@ -36,11 +36,11 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
-    
+
 # Other
 highlighter: none
 markdown: kramdown

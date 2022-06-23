@@ -1,7 +1,16 @@
 ---
-layout: page
+layout: gallery
 title: Gallery
 permalink: /gallery
 comments: true
 ---
 
+<div class="masonry">
+  {% for image in site.static_files %}
+      {% if image.path contains 'gallery' %}
+        <div class="item">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+        </div>
+      {% endif %}
+  {% endfor %}
+</div>
