@@ -26,7 +26,7 @@ git checkout -b develop origin/develop
 git branch
 ```
 
-### Switch to existed branch(e.g.: `develop`)
+### Switch to an existed branch(e.g.: `develop`)
 
 ```bash
 git checkout develop
@@ -38,7 +38,7 @@ git checkout develop
 git checkout -b ly-dev
 ```
 
-### Delete a existed branch
+### Delete an existed branch
 
 ```bash
 git branch -d ly-dev
