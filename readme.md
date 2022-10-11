@@ -1,63 +1,131 @@
-# LAB530 GitHub pages
+# 分支管理 - 以 lab530.github.io 为例
 
-## 如何为仓库贡献帖子和图片（以 ly 为例）
+## Clone This Repo
 
-### 克隆仓库先切换到你自己的编辑分支
+```bash
+git clone -b git@github.com:lab530/lab530.github.io.git
+```
 
-```shell
-git clone -b develop git@github.com:lab530/lab530.github.io.git
-cd lab530.github.io
+If you have cloned `main` , use this instruction to switch branch:
+
+```bash
+git checkout -b develop origin/develop
+```
+
+**Make sure that you are in `develop` branch.**
+
+**I will use `(branch)` notation to mark current branch.**
+
+**DO NOT operate `main` branch WITHOUT using pull request!**
+
+## Git Basics
+
+### Check local branches / current branch
+
+```bash
+git branch
+```
+
+### Switch to existed branch(e.g.: `develop`)
+
+```bash
+git checkout develop
+```
+
+### Create a new branch(e.g.: `ly-dev`)
+
+```bash
 git checkout -b ly-dev
 ```
 
-### 添加图片
+### Delete a existed branch
 
-将图片文件放到 `assets/gallery`
-
-### 添加帖子
-
-1. 在 `_posts`  里面创建 md 文件，命名格式是 `日期-名字.md`，具体命名可以参考已经存在的帖子。
-
-2. Markdown header:
-
-   ```markdown
-   ---
-   layout: post
-   title:  "我是标题"
-   author: 作者
-   categories: [ 分类 ]
-   tags: [ 标签1, 标签2, 标签3 ]
-   ---
-   ```
-
-3. 添加作者：
-
-   修改 `_config.yml`，里面找到 authors 项。参考已经存在的 item，创建合适信息的新的作者。
-
-### commit
-
-```shell
-$ git status
-$ git add -A
-$ git commit -m "commit message"
+```bash
+git branch -d ly-dev
 ```
 
-在本地部署你的服务器，使用 `jekyll s`，测试完毕后，切换到 `develop` 分支进行 merge:
+### Push & set upstream, use `-u` or `--set-upstream`
 
-```shell
-$ git checkout develop
-$ git merge ly-dev
+```bash
+(develop) git push -u origin develop
 ```
 
-### 推送
+### Merge branch(e.g.: merge `ly-dev` into `develop`)
 
-```shell
-$ git push -u origin develop
-$ # 第二次直接运行：
-$ git push
+```bash
+(develop) git merge ly-dev
 ```
 
-### Deploy
+## How to Modify This Repo
 
-在网页端操作，进行 code review 之后 merge 到 main 分支，GitHub CI 会自动部署。
+### 0. Create your own dev branch
 
+```bash
+(develop) git checkout -b yescafe-dev
+(yescafe-dev) git branch  # check current branch
+```
+
+### 1. Sync `develop` branch
+
+```bash
+git checkout develop
+(develop) git pull origin develop
+```
+
+If there are some new commits, merge back to your dev branch.
+
+```bash
+(develop) git checkout yescafe-dev
+(yescafe-dev) git merge develop
+```
+
+### 2. Work on your dev branch
+
+```bash
+git checkout yescafe-dev
+```
+
+And then edit your codes and posts!
+
+### 3. Make a commit
+
+After you finish your work, add all modified files to cache and commit a message.
+
+```bash
+(yescafe-dev) git add -A
+(yescafe-dev) git commit -m "A commit message here"
+```
+
+This is a basic operation, and this is no the only way. Learn and try it by yourself.
+
+### 4. Deploy & check your modifications
+
+Use Ruby and Jekyll to deploy the website on your local machine, I recommend RVM. If you use Lazarus’s server, you don’t need to setup Ruby and Jekyll environment by yourself, just execute it.
+
+```bash
+jekyll s --host 0.0.0.0
+```
+
+Then access `127.0.0.1:4000` on your browser, and check your modifications.
+
+### 5. Merge to `develop`
+
+If you think there is no error, switch to `develop` branch, sync with the upstream again, then merge commits.
+
+```bash
+(yescafe-dev) git checkout develop
+(develop) git pull origin develop
+(develop) git merge yescafe-dev
+```
+
+### 6. Push to upstream
+
+```bash
+(develop) git push origin develop
+```
+
+### 7. Next time, redo from 1!
+
+## For Admins: Code Review & Tackle Conflicts
+
+reserved
