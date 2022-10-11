@@ -19,6 +19,13 @@ authors:
     email: qyc027@outlook.com
     web: https://yescafe.github.io/
     description: "简简单单的路人角色"
+  lazarus:
+    name: lazarus
+    display_name: glt
+    avatar: 'assets/images/avatars/lazarus.png'
+    email: redrumlivedog@outlook.com
+    web: https://lazarus-glhf.github.io/
+    description: "OvO"
 
 # Plugins
 plugins:
