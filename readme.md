@@ -1,9 +1,9 @@
-# 分支管理 - 以 lab530.github.io 为例
+# How to Work with Us
 
 ## Clone This Repo
 
 ```bash
-git clone -b git@github.com:lab530/lab530.github.io.git
+git clone -b develop git@github.com:lab530/lab530.github.io.git
 ```
 
 If you have cloned `main` , use this instruction to switch branch:
