@@ -53,7 +53,7 @@ $ git merge ly-dev
 
 ```shell
 $ git push -u origin develop
-# 第二次直接运行：
+$ # 第二次直接运行：
 $ git push
 ```
 
