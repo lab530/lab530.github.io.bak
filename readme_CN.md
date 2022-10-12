@@ -16,7 +16,7 @@ git clone -b develop git@github.com:lab530/lab530.github.io.git
 git checkout -b develop origin/develop
 ```
 
-**确保你处于 `branch` 分支。**
+**确保你处于 `develop` 分支。**
 
 **我会用 `(branch)` 记号来标记当前分支。**
 
