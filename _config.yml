@@ -33,7 +33,13 @@ authors:
     email: dengyue1102@163.com
     web: 
     description: "啊这~"
-
+  Ereflect:
+    name: Ereflect
+    display_name: Ereflect
+    avatar: 'assets/images/avatars/Ereflect.jpg'
+    email: luodan_0464@qq.com.com
+    web: 
+    description: ""
 # Plugins
 plugins:
   - jekyll-paginate
