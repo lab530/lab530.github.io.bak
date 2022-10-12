@@ -26,6 +26,13 @@ authors:
     email: redrumlivedog@outlook.com
     web: https://lazarus-glhf.github.io/
     description: "OvO"
+  dengyue:
+    name: dengyue
+    display_name: wdf
+    avatar: 'assets/images/avatars/dengyue.jpg'
+    email: dengyue1102@163.com
+    web: 
+    description: "啊这~"
 
 # Plugins
 plugins:
