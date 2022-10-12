@@ -29,10 +29,10 @@ authors:
   dengyue:
     name: dengyue
     display_name: wdf
-    avater: 'assets/images/avatars/dengyue.jpg'
+    avatar: 'assets/images/avatars/dengyue.jpg'
     email: dengyue1102@163.com
     web: 
-    description: 
+    description: "啊这~"
 
 # Plugins
 plugins:
