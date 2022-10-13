@@ -1,3 +1,5 @@
+English | [简体中文](./readme_CN.md)
+
 # How to Work with Us
 
 ## Clone This Repo
@@ -96,7 +98,7 @@ After you finish your work, add all modified files to cache and commit a message
 (yescafe-dev) git commit -m "A commit message here"
 ```
 
-This is a basic operation, and this is no the only way. Learn and try it by yourself.
+This is a basic operation, and this is not the only way. Learn and try it by yourself.
 
 ### 4. Deploy & check your modifications
 
@@ -125,6 +127,14 @@ If you think there is no error, switch to `develop` branch, sync with the upstre
 ```
 
 ### 7. Next time, redo from 1!
+
+### 8. Create a pull request
+
+If you finished a feature or a job, such as a post, you can consider to create ONE pull request for your entire job.
+
+DO NOT one commit one pull request.
+
+And DO NOT review & merge the pull request by yourself. Codes should be reviewed by other people.
 
 ## For Admins: Code Review & Tackle Conflicts
 

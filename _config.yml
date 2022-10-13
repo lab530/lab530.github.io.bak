@@ -21,11 +21,11 @@ authors:
     description: "简简单单的路人角色"
   lazarus:
     name: lazarus
-    display_name: glt
+    display_name: lazarus
     avatar: 'assets/images/avatars/lazarus.jpg'
     email: redrumlivedog@outlook.com
     web: https://lazarus-glhf.github.io/
-    description: "OvO"
+    description: "nobody"
   dengyue:
     name: dengyue
     display_name: wdf
@@ -33,7 +33,13 @@ authors:
     email: dengyue1102@163.com
     web: 
     description: "啊这~"
-
+  Ereflect:
+    name: Ereflect
+    display_name: Ereflect
+    avatar: 'assets/images/avatars/Ereflect.jpg'
+    email: luodan_0464@qq.com.com
+    web: 
+    description: ""
 # Plugins
 plugins:
   - jekyll-paginate
@@ -68,7 +74,7 @@ adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
+lazyimages: "enabled"
 
 # Post Author Box ("enabled" or "disabled")
 authorbox: "enabled"
