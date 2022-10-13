@@ -1,3 +1,5 @@
+English | [简体中文](./readme_CN.md)
+
 # How to Work with Us
 
 ## Clone This Repo
