@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 7100px;
+    height: 7550px;//每添加一张图片，向上加50-80px
 }
 
 .item{
@@ -26,4 +26,13 @@
 .item:nth-child(3n){
     order: 3;
 }
+.masonry::before,
+.masonry::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
 
+body { font-family: sans-serif; }
+h3 { text-align: center; }
