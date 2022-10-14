@@ -118,17 +118,25 @@ Tips: `--host 0.0.0.0` is not necessary, this can help you access this local web
 
 If you think there is no error, switch to `main` branch, sync with the upstream again, then merge commits.
 
+**This is also NECESSARY!**
+
 ```bash
 (yescafe-dev) git checkout main
 (main) git pull origin main
 (main) git merge yescafe-dev
 ```
 
+If you don't do pull firstly and merge directly like me, while you are pushing, git may tell you:
+
+![git push reject xd](./assets/readme/SCR-20221014-u5a.png)
+
+If you don't have powerful git skills like me, do not try this.
+
 ### 6. Handle with conflicts
 
 Reserved.
 
-Oh, this would be a technique which you should have learnt.
+Oh, this would be a technique which you should have learned.
 
 ### 7. Push to upstream
 
