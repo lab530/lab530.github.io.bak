@@ -1,14 +1,38 @@
-.masonry {
-    column-count: 3;
-    column-gap: 0;
+.masonry{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 7550px;//每添加一张图片，向上加50-80px
 }
 
-.item {
+.item{
+    position: relative;
+    width: 33%;
     padding: 2px;
+    box-sizing: border-box;
 }
 
-.item img {
+.item img{
     display: block;
     width: 100%;
     height: auto;
 }
+.item:nth-child(3n+1){
+    order: 1;
+}
+.item:nth-child(3n+2){
+    order: 2;
+}
+.item:nth-child(3n){
+    order: 3;
+}
+.masonry::before,
+.masonry::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+body { font-family: sans-serif; }
+h3 { text-align: center; }
