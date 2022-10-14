@@ -5,20 +5,12 @@ English | [简体中文](./readme_CN.md)
 ## Clone This Repo
 
 ```bash
-git clone -b develop git@github.com:lab530/lab530.github.io.git
+git clone git@github.com:lab530/lab530.github.io.git
 ```
-
-If you have cloned `main` , use this instruction to switch branch:
-
-```bash
-git checkout -b develop origin/develop
-```
-
-**Make sure that you are in `develop` branch.**
 
 **I will use `(branch)` notation to mark current branch.**
 
-**DO NOT operate `main` branch WITHOUT using pull request!**
+**DO NOT operate `main` branch directly. Please use your own branch and use `merge` to merge commits to `main` branch.**
 
 ## Git Basics
 
@@ -28,10 +20,10 @@ git checkout -b develop origin/develop
 git branch
 ```
 
-### Switch to an existed branch(e.g.: `develop`)
+### Switch to an existed branch(e.g.: `main`)
 
 ```bash
-git checkout develop
+git checkout main
 ```
 
 ### Create a new branch(e.g.: `ly-dev`)
@@ -49,13 +41,13 @@ git branch -d ly-dev
 ### Push & set upstream, use `-u` or `--set-upstream`
 
 ```bash
-(develop) git push -u origin develop
+(main) git push -u origin main
 ```
 
-### Merge branch(e.g.: merge `ly-dev` into `develop`)
+### Merge branch(e.g.: merge `ly-dev` into `main`)
 
 ```bash
-(develop) git merge ly-dev
+(main) git merge ly-dev
 ```
 
 ## How to Modify This Repo
@@ -63,22 +55,24 @@ git branch -d ly-dev
 ### 0. Create your own dev branch
 
 ```bash
-(develop) git checkout -b yescafe-dev
+(main) git checkout -b yescafe-dev
 (yescafe-dev) git branch  # check current branch
 ```
 
-### 1. Sync `develop` branch
+### 1. Sync `main` branch
+
+**This is NECESSARY! DO NOT forget!**
 
 ```bash
-git checkout develop
-(develop) git pull origin develop
+git checkout main
+(main) git pull origin main
 ```
 
 If there are some new commits, merge back to your dev branch.
 
 ```bash
-(develop) git checkout yescafe-dev
-(yescafe-dev) git merge develop
+(main) git checkout yescafe-dev
+(yescafe-dev) git merge main
 ```
 
 ### 2. Work on your dev branch
@@ -110,32 +104,47 @@ jekyll s --host 0.0.0.0
 
 Then access `127.0.0.1:4000` on your browser, and check your modifications.
 
-### 5. Merge to `develop`
-
-If you think there is no error, switch to `develop` branch, sync with the upstream again, then merge commits.
+If you are using the Lazarus's server and not sure of whether you are the only one using jekyll at the meantime, you should use a different specified port instead of the default one(4000), such as 4001, 4002, for example:
 
 ```bash
-(yescafe-dev) git checkout develop
-(develop) git pull origin develop
-(develop) git merge yescafe-dev
+jekyll s --host 0.0.0.0 --port 4001
 ```
 
-### 6. Push to upstream
+And access `127.0.0.1:4001`.
+
+Tips: `--host 0.0.0.0` is not necessary, this can help you access this local website via your LAN IP address using another device.
+
+### 5. Merge to `main`
+
+If you think there is no error, switch to `main` branch, sync with the upstream again, then merge commits.
 
 ```bash
-(develop) git push origin develop
+(yescafe-dev) git checkout main
+(main) git pull origin main
+(main) git merge yescafe-dev
 ```
 
-### 7. Next time, redo from 1!
+### 6. Handle with conflicts
 
-### 8. Create a pull request
+Reserved.
 
-If you finished a feature or a job, such as a post, you can consider to create ONE pull request for your entire job.
+Oh, this would be a technique which you should have learnt.
 
-DO NOT one commit one pull request.
+### 7. Push to upstream
 
-And DO NOT review & merge the pull request by yourself. Codes should be reviewed by other people.
+At the first time, execute:
 
-## For Admins: Code Review & Tackle Conflicts
+```bash
+(main) git push -u origin main
+```
 
-reserved
+to push and set upstream.
+
+And in the next time, you could just run:
+
+```bash
+(main) git push
+```
+
+### 8. Next time, redo from 1!
+
