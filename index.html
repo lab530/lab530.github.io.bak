@@ -3,10 +3,12 @@ layout: default
 title: Home
 ---
 
-<h2>公告板：</h2>
-{% for b in site.bulletin %}
-    <h4>{{ b }}</h4>
-{% endfor %}
+<table class="bulletin-table">
+    <tr><td class="bulletin-title">公告板：</td></tr>
+    {% for b in site.bulletin %}
+        <tr><td class="bulletin-item">{{ b }}</td></tr>
+    {% endfor %}
+</table>
 
 <!-- Posts Index
 ================================================== -->
