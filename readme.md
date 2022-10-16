@@ -2,6 +2,10 @@ English | [简体中文](./readme_CN.md)
 
 # How to Work with Us
 
+## Ruby & Jekyll
+
+We recommend Ruby 2.7.2, if you use other version of Ruby, you need to handle all red alerts by yourself xd. And don't apply the modification of `Gemfile.lock` to git, this may make others can't use their environment.
+
 ## Clone This Repo
 
 ```bash
