@@ -24,22 +24,32 @@ post_class: post-template
             {% else %}
             <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
             {% endif %}
-        </div>            
+        </div>
         <div>
         {% if page.ref %}
         Edited
         {% else %}
         Written
         {% endif %}
-        by {{ author.display_name }} 
+        by
+        {% if author.github %}
+        <a href="https://github.com/{{ author.github }}">{{ author.display_name }}</a>
+        {% else %}
+        {{ author.display_name }}
+        {% endif %}
         {% if page.coworkers %}
-        with 
+        with
         {% for cws in page.coworkers %}
-        {{ site.authors[cws].display_name }}, 
+        {% assign cw = site.authors[cws] %}
+        {% if cw.github %}
+        <a href="https://github.com/{{ cw.github }}">{{ cw.display_name }}</a>,
+        {% else %}
+        {{ cw.display_name }},
+        {% endif %}
         {% endfor %}
         {% endif %}
-        on 
-        <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+        on
+        <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
         {% if page.last_modified_at %}
         (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
         {% endif %}

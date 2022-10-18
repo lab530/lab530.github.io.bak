@@ -21,6 +21,7 @@ authors:
     name: Ivan Chien
     display_name: qyc
     avatar: 'assets/images/avatars/ivan_chien.png'
+    github: yescafe
     email: qyc027@outlook.com
     web: https://yescafe.github.io/
     description: "简简单单的路人角色"
@@ -28,6 +29,7 @@ authors:
     name: lazarus
     display_name: lazarus
     avatar: 'assets/images/avatars/lazarus.jpg'
+    github: Lazarus-glhf
     email: redrumlivedog@outlook.com
     web: https://lazarus-glhf.github.io/
     description: "努力的生活。"
@@ -35,6 +37,7 @@ authors:
     name: dengyue
     display_name: wdf
     avatar: 'assets/images/avatars/dengyue.jpg'
+    github: dengyue
     email: dengyue1102@163.com
     web: 
     description: "啊这~"
@@ -42,6 +45,7 @@ authors:
     name: Ereflect
     display_name: Ereflect
     avatar: 'assets/images/avatars/Ereflect.jpg'
+    github: ErefIect
     email: luodan_0464@qq.com
     web: 
     description: ""
@@ -49,6 +53,7 @@ authors:
     name: PlumYu
     display_name: Li Yu
     avatar: 'assets/images/avatars/PlumYu.jpg'
+    github: PlumYu
     email: 2477934060@qq.com
     web: 
     description: ""
