@@ -34,7 +34,9 @@
                 </div>
                 {% endif %}
             </h2>
-            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
+            {% if post.subtitle %}
+            <h4 class="card-text">{{ post.subtitle }}</h4>
+            {% endif %}
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
