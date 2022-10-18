@@ -42,7 +42,14 @@ authors:
     name: Ereflect
     display_name: Ereflect
     avatar: 'assets/images/avatars/Ereflect.jpg'
-    email: luodan_0464@qq.com.com
+    email: luodan_0464@qq.com
+    web: 
+    description: ""
+  PlumYu:
+    name: PlumYu
+    display_name: Li Yu
+    avatar: 'assets/images/avatars/PlumYu.jpg'
+    email: 2477934060@qq.com
     web: 
     description: ""
 # Plugins
