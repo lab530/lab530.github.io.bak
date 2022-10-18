@@ -4,11 +4,12 @@ title: 中文文案排版指北（简体中文版）
 author: ivan_chien
 categories: [ 文本 ]
 tags: [ 文本 ]
+ref: https://github.com/sparanoid/chinese-copywriting-guidelines
 ---
 
 **本网站所有文案均遵守本项目的规范。**
 
-forked from: [sparanoid/chinese-copywriting-guidelines](https://raw.githubusercontent.com/sparanoid/chinese-copywriting-guidelines)
+forked from: [sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)
 
 # 中文文案排版指北
 

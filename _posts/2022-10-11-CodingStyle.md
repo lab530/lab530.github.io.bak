@@ -2,6 +2,7 @@
 layout: post
 title:  530 Cpp Coding Style
 author: lazarus
+coworkers: [ ivan_chien ]
 categories: [ 代码入门 ]
 tags: [ CodingsStyle ]
 ---
