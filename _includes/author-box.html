@@ -1,17 +1,17 @@
 <!-- Author Box -->
-{% if page.author %}
 {% if site.authorbox == "enabled" %}
-<div class="authorbox mb-5 mt-5 pt-4 pb-4">   
+{% if page.author %}
+<div class="authorbox mb-5 mt-5 pt-4 pb-4">
     <div class="row">
         <div class="wrapavname col-md-3 text-center">
             {% if author.gravatar %}
-            <img  class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+            <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
             {% else %}
-            <img  class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+            <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
             {% endif %}
             <p class="mt-4 mb-0 small text-center">
                 {% if author.web %}
-                    <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author.web }}"><i class="fa fa-link"></i></a> 
+                    <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author.web }}"><i class="fa fa-link"></i></a>
                 {% endif %}
                 {% if author.twitter %}
                     <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author.twitter }}"><i class="fab fa-twitter"></i></a>
@@ -25,7 +25,36 @@
             <h4>{{ author.display_name }}</h4>
             <p class="mt-3 mb-0">{{ author.description }}</p>
         </div>
-    </div> 
-</div> 
+    </div>
+</div>
 {% endif %}
+{% for cws in page.coworkers %}
+{% assign cw = site.authors[cws] %}
+<div class="authorbox mb-5 mt-5 pt-4 pb-4">
+    <div class="row">
+        <div class="wrapavname col-md-3 text-center">
+            {% if cw.gravatar %}
+            <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ cw.gravatar }}?s=250&d=mm&r=x" alt="{{ cw.display_name }}">
+            {% else %}
+            <img class="author-thumb" src="{{site.baseurl}}/{{ cw.avatar }}" alt="{{ cw.display_name }}">
+            {% endif %}
+            <p class="mt-4 mb-0 small text-center">
+                {% if cw.web %}
+                    <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ cw.web }}"><i class="fa fa-link"></i></a>
+                {% endif %}
+                {% if cw.twitter %}
+                    <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ cw.twitter }}"><i class="fab fa-twitter"></i></a>
+                {% endif %}
+                {% if cw.email %}
+                    <a class="d-inline-block mx-1 text-dark" href="mailto:{{ cw.email }}"><i class="fa fa-envelope"></i></a>
+                {% endif %}
+            </p>
+        </div>
+        <div class="col-md-9">
+            <h4>{{ cw.display_name }}</h4>
+            <p class="mt-3 mb-0">{{ cw.description }}</p>
+        </div>
+    </div>
+</div>
+{% endfor %}
 {% endif %}
