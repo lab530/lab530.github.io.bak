@@ -35,7 +35,7 @@ post_class: post-template
         {% if page.coworkers %}
         with 
         {% for cws in page.coworkers %}
-        {{ cws }}, 
+        {{ site.authors[cws].display_name }}, 
         {% endfor %}
         {% endif %}
         on 
