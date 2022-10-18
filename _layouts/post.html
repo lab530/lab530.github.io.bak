@@ -8,6 +8,9 @@ post_class: post-template
 <div class="entry-header">
     <!-- Post Title -->
     <h1 class="posttitle">{{ page.title }}</h1>
+    {% if page.ref %}
+    ref: <a href="{{ page.ref }}">{{ page.ref | truncate: 100 }}</a>
+    {% endif %}
     <!-- Author & Date  Box -->
     {% assign author = site.authors[page.author] %}
     {% if page.author %}
@@ -20,7 +23,12 @@ post_class: post-template
             {% endif %}
         </div>            
         <div>
-        Written by {{ author.display_name }} 
+        {% if page.ref %}
+        Edited
+        {% else %}
+        Written
+        {% endif %}
+        by {{ author.display_name }} 
         {% if page.coworkers %}
         with 
         {% for cws in page.coworkers %}
@@ -32,7 +40,7 @@ post_class: post-template
         {% if page.last_modified_at %}
         (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
         {% endif %}
-        </div>            
+        </div>
     </div>
     {% endif %}
 </div>
