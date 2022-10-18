@@ -10,6 +10,11 @@ include: ["_pages"]
 permalink: /:year-:month-:day/:title/
 email: qyc027@outlook.com
 
+# Bulletin
+bulletin:
+  - 仓库链接：<a href="https://github.com/lab530/lab530.github.io">https://github.com/lab530/lab530.github.io</a>
+  - QQ 群号：613998612
+
 # Authors
 authors:
   ivan_chien:
@@ -25,7 +30,7 @@ authors:
     avatar: 'assets/images/avatars/lazarus.jpg'
     email: redrumlivedog@outlook.com
     web: https://lazarus-glhf.github.io/
-    description: "nobody"
+    description: "努力的生活。"
   dengyue:
     name: dengyue
     display_name: wdf
