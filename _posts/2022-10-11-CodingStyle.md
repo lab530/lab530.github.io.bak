@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  530 Cpp Coding Style
+subtitle: 让你写出一份漂亮的代码
 author: lazarus
 coworkers: [ ivan_chien ]
 categories: [ 代码入门 ]
 tags: [ CodingsStyle ]
 ---
-
-让你写出一份漂亮的代码
 
 **评价一份代码的好坏有许多标准，但无论如何都不仅是能够编译通过，本文旨在给出一份基础的代码风格推荐。**
 
