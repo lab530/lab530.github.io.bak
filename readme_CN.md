@@ -65,7 +65,7 @@ git branch -d ly-dev
 
 ### 1. 同步 `main` 分支
 
-**这是必要的！不要忘记！**
+**非常重要! 请务必在每次进行更改前执行此操作**
 
 ```bash
 git checkout main
@@ -117,11 +117,11 @@ jekyll s --host 0.0.0.0 --port 4001
 
 提示： `--host 0.0.0.0 `不是必需的，这可以帮助您使用其他设备通过您的 LAN IP 地址访问此本地网站。
 
-### 5. 合并到 `develop`
+### 5. 合并到 `main`
 
 如果你认为没有错误，切换到 `main` 分支，再次同步上游代码，然后合并提交。
 
-**这也是必要的！**
+**这也是必要的！请务必在每次将修改的部分 merge 到 main 分支时按顺序执行以下操作**
 
 ```bash
 (yescafe-dev) git checkout main
@@ -139,16 +139,15 @@ jekyll s --host 0.0.0.0 --port 4001
 
 Oh，这将是您应该学习的技术。
 
-### 7. 推送到上游
+### 7. 推送到远程仓库
 
-第一次，执行：
+第一次 push 时，执行以下代码来推送和设置上游 :
 
 ```bash
 (main) git push -u origin main
 ```
-推动和设置上游。
 
-在下一次，你可以运行：
+之后可以直接执行以下代码 :
 
 ```bash
 (main) git push
