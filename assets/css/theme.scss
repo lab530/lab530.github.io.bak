@@ -405,6 +405,13 @@ img, img:hover {
     font-weight:700;
     line-height:1.2;
 }
+.postsubtitle {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    color: #777;
+    margin-top: 1em;
+}
 .entry-featured-image {  
     width:940px;  
     max-width: 100%;
@@ -634,6 +641,9 @@ body.active-side {
 @media (max-width: 768px) {
     .posttitle {
         font-size:35px;
+    }
+    .postsubtitle {
+        font-size: 14px;
     }
     .blog-grid-container {
         grid-template-columns: 1fr;

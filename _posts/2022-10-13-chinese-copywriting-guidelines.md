@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 中文文案排版指北（简体中文版）
+subtitle: 每人必看喵~
 author: ivan_chien
 categories: [ 文本 ]
 tags: [ 文本 ]
@@ -14,14 +15,6 @@ forked from: [sparanoid/chinese-copywriting-guidelines](https://github.com/spara
 # 中文文案排版指北
 
 统一中文文案、排版的相关用法，降低团队成员之间的沟通成本，增强网站气质。
-
-Other languages:
-
-- [英语](README.en.md)
-- [繁体中文](README.md)
-- [简体中文](README.zh-Hans.md)
-
-* * *
 
 ## 空格
 
