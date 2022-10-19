@@ -4,23 +4,17 @@
 
 # 如何和我们一起工作
 
+## Ruby & Jekyll
+我们推荐 Ruby 2.7.2，如果您使用其它版本的 Ruby，您需要自己处理所有红色警报，并且不要将`Gemfile.lock`的修改应用到git，这可能会使其他人无法使用他们的环境。
+
 ## 克隆仓库
 
 ```bash
 git clone -b develop git@github.com:lab530/lab530.github.io.git
 ```
+**我将使用`(branch)`符号来标记当前分支。**
 
-如果你已经克隆了 `main` 分支，使用这个指令来切换分支：
-
-```bash
-git checkout -b develop origin/develop
-```
-
-**确保你处于 `develop` 分支。**
-
-**我会用 `(branch)` 记号来标记当前分支。**
-
-**不要使用除了 pull request 以外的方法来操作 `main` 分支！**
+**不要`main`直接操作分支。请使用您自己的分支并使用`merge`将提交合并到`main`分支。**
 
 ## Git 基础指令
 
@@ -30,10 +24,10 @@ git checkout -b develop origin/develop
 git branch
 ```
 
-### 切换到已经存在的分支（比如：`develop`）
+### 切换到已经存在的分支（比如：`main`）
 
 ```bash
-git checkout develop
+git checkout main
 ```
 
 ### 创建一个新分支（比如：`ly-dev`）
@@ -51,13 +45,13 @@ git branch -d ly-dev
 ### 推送和设置上流，使用 `-u` 或 `--set-upstream`
 
 ```bash
-(develop) git push -u origin develop
+(main) git push -u origin main
 ```
 
-### 合并分支（比如：合并 `ly-dev` 进 `develop`）
+### 合并分支（比如：合并 `ly-dev` 进 `main`）
 
 ```bash
-(develop) git merge ly-dev
+(main) git merge ly-dev
 ```
 
 ## 如何修改这个仓库
@@ -65,22 +59,24 @@ git branch -d ly-dev
 ### 0. 创建你自己的开发分支
 
 ```bash
-(develop) git checkout -b yescafe-dev
+(main) git checkout -b yescafe-dev
 (yescafe-dev) git branch  # 检查当前分支
 ```
 
-### 1. 同步 `develop` 分支
+### 1. 同步 `main` 分支
+
+**这是必要的！不要忘记！**
 
 ```bash
-git checkout develop
-(develop) git pull origin develop
+git checkout main
+(main) git pull origin main
 ```
 
 如果有新的提交，合并回你的开发分支。
 
 ```bash
-(develop) git checkout yescafe-dev
-(yescafe-dev) git merge develop
+(main) git checkout yescafe-dev
+(yescafe-dev) git merge main
 ```
 
 ### 2. 在你的开发分支上工作
@@ -112,32 +108,49 @@ jekyll s --host 0.0.0.0
 
 然后在你的浏览器中访问 `127.0.0.1:4000`，接着检查你的变更。
 
+如果你使用的是 Lazarus 的服务器，同时不确定你是否是唯一一个使用 jekyll 的，你应该使用不同的指定端口而不是默认端口（4000），例如 4001、4002，例如：
+
+```bash
+jekyll s --host 0.0.0.0 --port 4001
+```
+访问`127.0.0.1:4001 `
+
+提示： `--host 0.0.0.0 `不是必需的，这可以帮助您使用其他设备通过您的 LAN IP 地址访问此本地网站。
+
 ### 5. 合并到 `develop`
 
-如果你认为没有错误，切换到 `develop` 分支，再次同步上游代码，然后合并提交。
+如果你认为没有错误，切换到 `main` 分支，再次同步上游代码，然后合并提交。
+
+**这也是必要的！**
 
 ```bash
-(yescafe-dev) git checkout develop
-(develop) git pull origin develop
-(develop) git merge yescafe-dev
+(yescafe-dev) git checkout main
+(main) git pull origin main
+(main) git merge yescafe-dev
 ```
+如果你没有像我一样先拉取直接合并，当你向上推时，git 可能会告诉你：
 
-### 6. 推送到上游
+![git push reject xd](/assets/readme/SCR-20221014-u5a.png)
+
+如果你没有像我一样强大的 git 技能，请不要尝试这个。
+
+### 6.处理冲突
+保留。
+
+Oh，这将是您应该学习的技术。
+
+### 7. 推送到上游
+
+第一次，执行：
 
 ```bash
-(develop) git push origin develop
+(main) git push -u origin main
 ```
+推动和设置上游。
 
-### 7. 下一次，从 1 重新开始做！
+在下一次，你可以运行：
 
-### 8. 创建一个 pull request
-
-如果你完成了一个功能或者工作，比如一篇帖子，你可以考虑为你的整个工作创建*一个* pull request。
-
-*不要*一个提交一个 pull request。
-
-并且*不要*自己审查和合并你的 pull request。代码审查需要他人来进行。
-
-## For Admins: Code Review & Tackle Conflicts
-
-reserved
+```bash
+(main) git push
+```
+### 8. 下一次，从 1 重新开始做！
