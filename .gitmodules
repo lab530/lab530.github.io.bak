@@ -1,0 +1,3 @@
+[submodule "assets/gallery"]
+	path = assets/gallery
+	url = https://github.com/lab530/pages-gallery-storage
