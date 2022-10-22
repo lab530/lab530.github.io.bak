@@ -57,6 +57,13 @@ authors:
     email: 2477934060@qq.com
     web: 
     description: ""
+  Hanpro:
+    name: Hanpro
+    display_name: wzh
+    avatar: 'assets/images/avatars/hanpro.jpeg'
+    github: Hanpro9
+    email: 1422306220@qq.com
+    description: "记得对自己热爱的专业保持激情"
 # Plugins
 plugins:
   - jekyll-paginate
