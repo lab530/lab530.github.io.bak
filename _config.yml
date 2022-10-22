@@ -15,6 +15,10 @@ bulletin:
   - 仓库链接：<a href="https://github.com/lab530/lab530.github.io">https://github.com/lab530/lab530.github.io</a>
   - QQ 群号：613998612
 
+# CDN prefix
+CDN_prefix: https://cdn.jsdelivr.net/gh/lab530/assets_images_storage/
+CDN_gallery_prefix: https://cdn.jsdelivr.net/gh/lab530/pages-gallery-storage/
+
 # Authors
 authors:
   ivan_chien:
