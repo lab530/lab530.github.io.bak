@@ -9,7 +9,7 @@ comments: true
   {% for image in site.static_files %}
       {% if image.path contains 'gallery' %}
         <div class="item">
-          <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/lab530/pages-gallery-storage/{{ image.path | split: '/' | last }}" alt="image" />
         </div>
       {% endif %}
   {% endfor %}
