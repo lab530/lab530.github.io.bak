@@ -13,4 +13,12 @@ comments: true
         </div>
       {% endif %}
   {% endfor %}
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.1/jquery.js"></script>
+	<script>
+	$("img").lazyload({
+  placeholder : "images.jpeg", 
+  effect: "fadeIn", 
+  threshold: -200, 
+});</script>
 </div>
