@@ -2,9 +2,11 @@
 layout: post
 title:  How to use MarkDown
 subtitle: MarkDown入门教程
-author: hanpro
+author: Hanpro
 tags: [ MarkDown ]
 ---
+
+
 #### MarkDown是什么？
 
 Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。
