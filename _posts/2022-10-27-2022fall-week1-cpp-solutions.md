@@ -6,9 +6,9 @@ categories: [ 代码 ]
 tags: [ 题解 ]
 ---
 
-A.cpp:
+A.cc:
 
-```c++
+```c
 #include <iostream>
 using namespace std;
 
@@ -34,9 +34,9 @@ int main()
 }
 ```
 
-B.cpp:
+B.cc:
 
-```c++
+```c
 #include <iostream>
 #include <string>
 using namespace std;
@@ -68,9 +68,9 @@ int main()
 }
 ```
 
-C.cpp:
+C.cc:
 
-```c++
+```c
 #include <iostream>
 #include <iomanip>
 #include <vector>
@@ -107,9 +107,9 @@ int main()
 }
 ```
 
-D.cpp:
+D.cc:
 
-```c++
+```c
 #include <iostream>
 using namespace std;
 
@@ -136,9 +136,9 @@ int main()
 }
 ```
 
-E.cpp:
+E.cc:
 
-```c++
+```c
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -166,9 +166,9 @@ int main()
 }
 ```
 
-F.cpp:
+F.cc:
 
-```c++
+```c
 #include <iostream>
 #include <iomanip>
 using namespace std;
