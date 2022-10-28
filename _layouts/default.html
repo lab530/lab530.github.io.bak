@@ -122,6 +122,12 @@
             </div>
             <div class="col-md-6 col-sm-12 text-center text-lg-right">    
                 Based on <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs</a> | <a href="https://github.com/lab530/">lab530</a> to present
+                {% if site.components.busuanzi.enabled == true %}
+                    <script async src="{{ assets_base_url }}/assets/js/busuanzi.pure.mini.js"></script>
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        | Visiting counts <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                {% endif %}
             </div>
         </div>
     </div>

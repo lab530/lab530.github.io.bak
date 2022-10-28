@@ -113,3 +113,8 @@ sass:
   style: compressed
 
 exclude: [changelog.md, LICENSE.txt, readme.md, Gemfile, Gemfile.lock]
+
+components:
+  busuanzi:
+    enabled: true
+    start_date: 2022-10-28
