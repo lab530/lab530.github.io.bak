@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+permalink: /index2
+---
+
+<table class="bulletin-table">
+    <tr><td class="bulletin-title">公告板：</td></tr>
+    {% for b in site.bulletin %}
+        <tr><td class="bulletin-item">{{ b }}</td></tr>
+    {% endfor %}
+</table>
+
+<!-- Posts Index
+================================================== -->
+<!-- begin post -->
+{% assign title = "Hint" %}
+{% assign hashval = title | size | modulo: 10 %}
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="{{ site.baseurl }}/newhint">
+                    {% if site.lazyimages == "enabled" %}
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{{ site.baseurl }}/assets/images/default/{{ hashval }}.jpg" alt="{{ post.title }}">
+                    {% else %}
+                        <img class="img-thumb" src="{{ site.baseurl }}/assets/images/default/{{ hashval }}.jpg" alt="{{ post.title }}">
+                    {% endif %}
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="{{ site.baseurl }}/newhint">{{ title }}</a>
+            </h2>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                <span class="author-meta">
+                <span class="post-date">10-30</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
