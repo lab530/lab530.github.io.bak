@@ -12,8 +12,9 @@ email: qyc027@outlook.com
 
 # Bulletin
 bulletin:
-  - 仓库链接：<a href="https://github.com/lab530/lab530.github.io">https://github.com/lab530/lab530.github.io</a>
-  - QQ 群号：613998612
+  # - 仓库链接：<a href="https://github.com/lab530/lab530.github.io">https://github.com/lab530/lab530.github.io</a>
+  # - QQ 群号：613998612
+  - Happy Halloween!
 
 # CDN prefix
 CDN_prefix: https://cdn.jsdelivr.net/gh/lab530/assets_images_storage/
