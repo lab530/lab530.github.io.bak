@@ -54,7 +54,7 @@ HI THERE, ME AM THA HALLOWEEN KING, ME DO NOT USE LANGUAGE FROM THA EARTH, BECAU
 
 由公告中提供的网址 <http://encode.chahuo.com/>，猜测与这个网站中的对称加密算法相关。但是无论是哪种加密算法，都区分大小写，于后面提示的 special pozition 4 5 8 12 13 20 25 27 28 29 31 36 38 39 42 43 有关。进行尝试，如正确解法的代码：
 
-```c++
+```c
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -79,7 +79,7 @@ int main()
 
 ## B 题解谜
 
-小狗图，同样掉 san。因为这只狗图片是 AI 自成的。
+小狗图，同样掉 san。因为这只狗图片是 AI 生成的。
 
 放大图后，发现图上有小点。使用 Photoshop 等工具精确到像素查看，发现每一个小点相距 8 个像素。尝试将这些小点聚合：
 
