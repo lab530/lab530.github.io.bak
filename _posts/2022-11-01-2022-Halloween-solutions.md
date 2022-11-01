@@ -151,3 +151,7 @@ P.S.: sekinya 是 neta 只狼（sekiro）的只喵。
 - 晚 9 点 46 分，在我的一再明示下，「移位」这个词终于出现，A 题第一道加密能攻破吗？
 - 48 分放出第二题提示：zoom，代表的是 zoom in 的放大。
 - 而后就没有消息了，活动提前 1 个小时结束。
+
+## 附录：相关链接
+
+Ereflect 的题解：<https://mashiro-me.blog.luogu.org/post-post>
