@@ -1,16 +1,23 @@
 
 .bulletin {
     &-table {
+        margin: 1em 0;
+        border: 0;
+    }
 
+    &-tr {
+        border: 0;
     }
 
     &-title {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 600;
+        border: 0;
     }
 
     &-item {
-        font-size: 18px;
+        font-size: 20px;
+        border: 0;
     }
 }
 

@@ -740,3 +740,12 @@ body.active-side {
         }
     }
 }
+
+table {
+    margin: 1em auto;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 8px 20px;
+}
