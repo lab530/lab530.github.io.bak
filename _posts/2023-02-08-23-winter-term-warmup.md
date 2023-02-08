@@ -38,12 +38,18 @@ int main() {
 ```c
 #include <bits/stdc++.h>
 
-int main() {
+void solve() {
     char c;
     if (std::cin >> c) {
         solve();
         std::cout << c;
     }
+}
+
+int main()
+{
+    ::solve();
+    std::cout << std::endl;
 }
 ```
 
