@@ -121,7 +121,7 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    printf("65677277101");
+    printf("65721016777");
     return 0;
 }
 ```
@@ -173,7 +173,7 @@ int main() {
     int i, j, m, temp;
     scanf("%d", &n);
     for( i = 0; i < n; i++)
-        scanf("%d,", &a[i]);
+        scanf("%d", &a[i]);
     for( i = 0; i < n-1; i++) {
         m = i;  
         for( j = i + 1; j < n; j++) 
