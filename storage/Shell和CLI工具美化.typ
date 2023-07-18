@@ -136,6 +136,8 @@
   strong(text(20pt)[Shell 和 CLI 工具美化])
   set align(center)
   link("https://github.com/Yestercafe")[Ivan Chien]
+  linebreak()
+  text[2023.7.18]
 }
 
 // ----------------------------------------------------------------------------
@@ -151,16 +153,17 @@
 = 我使用到的和你可能同样需要的东西
 
 + 一台电脑
-+ 一台 Ubuntu 20.04 LTS 虚拟机。如果你是 Windows 平台亦可以使用 #link("https://learn.microsoft.com/zh-cn/windows/wsl/install")[WSL 2]
++ Linux 系统。可以装在主机上，也可以使用虚拟机。如果你是 Windows 平台亦可以使用 #link("https://learn.microsoft.com/zh-cn/windows/wsl/install")[WSL 2]。我这边使用的是 SSH 连接真实 Linux 机器的方式。
++ Linux 最好是 Ubuntu。我演示使用的可能是 Fedora。
 
-= 我使用到的软件
+= 使用到的软件
 
 + `apt`
 + `bash` / `zsh`
 + `vim`
 + `tmux`
 
-= 我使用到的初始配置
+= 使用到的初始配置
 
 == Vim
 
@@ -220,7 +223,7 @@ set -g default-terminal "screen-256color"
 
 == Bash
 
-Ubuntu 默认。
+如果你用的是 Ubuntu 那就用 Ubuntu 默认的 Bash 配置。
 
 = 流程大纲
 
@@ -343,5 +346,4 @@ bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
 bind '"' split-window -v -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 ```]
-
 
