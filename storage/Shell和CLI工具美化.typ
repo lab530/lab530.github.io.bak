@@ -137,7 +137,7 @@
   set align(center)
   link("https://github.com/Yestercafe")[Ivan Chien]
   linebreak()
-  text[2023.7.18]
+  text[#datetime.today().display("[year].[month].[day]")]
 }
 
 // ----------------------------------------------------------------------------
@@ -153,8 +153,8 @@
 = 我使用到的和你可能同样需要的东西
 
 + 一台电脑
-+ Linux 系统。可以装在主机上，也可以使用虚拟机。如果你是 Windows 平台亦可以使用 #link("https://learn.microsoft.com/zh-cn/windows/wsl/install")[WSL 2]。我这边使用的是 SSH 连接真实 Linux 机器的方式。
-+ Linux 最好是 Ubuntu。我演示使用的可能是 Fedora。
++ Linux 系统。可以装在主机上，也可以使用虚拟机。如果你是 Windows 平台亦可以使用 #link("https://learn.microsoft.com/zh-cn/windows/wsl/install")[WSL 2]。我这边使用的是 SSH 连接真实 Linux 机器的方式
++ Linux 最好是 Ubuntu。我演示使用的可能是 Fedora
 
 = 使用到的软件
 
@@ -166,6 +166,8 @@
 = 使用到的初始配置
 
 == Vim
+
+Vim 这边仅做了一些我常用的基础配置和按键，也可不配。
 
 #linebreak()
 #code(caption: "~/.vimrc")[```vimrc
@@ -203,19 +205,17 @@ nnoremap U <C-u>
 nnoremap D <C-d>
 nmap J <nop>
 nmap s <nop>
-
-"" 
 ```]
 
 == Tmux
+
+tmux 主要是修改了 prefix key 的绑定，后面我会解释为什么会改成 `C-x`。
 
 #linebreak()
 #code(caption: "~/.tmux.conf")[```conf
 unbind C-b
 set -g prefix C-x
 bind C-x send-prefix
-
-# 
 
 set-option -sa terminal-overrides ",xterm*:Tc"
 set -g default-terminal "screen-256color"
@@ -224,6 +224,8 @@ set -g default-terminal "screen-256color"
 == Bash
 
 如果你用的是 Ubuntu 那就用 Ubuntu 默认的 Bash 配置。
+
+当然你甚至可以把 Bash 的配置删了。
 
 = 流程大纲
 
@@ -234,7 +236,7 @@ set -g default-terminal "screen-256color"
 + prompt 和 PS1
 + 安装和使用 zsh 和 oh-my-zsh
 + 如何选择？
-+ fish
++ 那么 fish 又是什么
 
 === Zsh 插件
 
@@ -294,9 +296,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 
 == 本篇 PDF 的源码
 
-#link("https://github.com/lab530/lab530.github.io/blob/main/storage/Shell和CLI工具美化.typ")
+#link("https://github.com/lab530/lab530.github.io/blob/main/storage/Shell%E5%92%8CCLI%E5%B7%A5%E5%85%B7%E7%BE%8E%E5%8C%96.typ")
 
 == Tmux 成品配置
+
+#link("https://github.com/Yestercafe/dotfiles/blob/2a3c30dde3e39d847beab766035521ffda90c048/.tmux.conf")
 
 #linebreak()
 #code(caption: "~/.tmux.conf")[```conf
