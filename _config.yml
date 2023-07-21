@@ -23,11 +23,11 @@ CDN_gallery_prefix: https://cdn.jsdelivr.net/gh/lab530/pages-gallery-storage/
 authors:
   ivan_chien:
     name: Ivan Chien
-    display_name: Yescafe
-    avatar: 'assets/images/avatars/ivan_chien.png'
-    github: yescafe
+    display_name: Yestercafe
+    avatar: 'assets/images/avatars/yestercafe.png'
+    github: yestercafe
     email: qyc027@outlook.com
-    web: https://yescafe.github.io/
+    web: https://yestercafe.github.io/
     description: "简简单单的路人角色"
   lazarus:
     name: lazarus
