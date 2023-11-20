@@ -4,6 +4,8 @@ English | [简体中文](./readme_CN.md)
 
 ## Ruby & Jekyll
 
+Update: we are using Ruby 3.2.2 and Jekyll 4.3.2 now, please run `bundle install` once again.
+
 We recommend Ruby 2.7.2, if you use other version of Ruby, you need to handle all red alerts by yourself xd. And don't apply the modification of `Gemfile.lock` to git, this may make others can't use their environment.
 
 ## Clone This Repo
